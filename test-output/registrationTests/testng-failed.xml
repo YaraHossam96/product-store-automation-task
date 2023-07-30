@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [registrationTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="registerNewUser(failed)">
+    <parameter name="expectedAlertMsg" value="Sign up successful."/>
+    <parameter name="password" value="secretpassword"/>
+    <parameter name="username" value="Emilyyyyy Burton"/>
+    <classes>
+      <class name="com.demoblaze.RegistrationTests">
+        <methods>
+          <include name="registerUserTests" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.RegistrationTests -->
+    </classes>
+  </test> <!-- registerNewUser(failed) -->
+</suite> <!-- Failed suite [registrationTests] -->

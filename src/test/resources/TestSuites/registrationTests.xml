@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="registrationTests" verbose="1">
+	<test name="registerNewUser">
+
+		<parameter name="username" value="Carl Turner"></parameter>
+		<parameter name="password" value="secretpassword"></parameter>
+		<parameter name="expectedAlertMsg" value="Sign up successful."></parameter>
+
+		<classes>
+			<class name="com.demoblaze.RegistrationTests">
+
+				<methods>
+					<include name="registerUserTests"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+	<test name="registerExistingUser">
+
+		<parameter name="username" value="Carl Turner"></parameter>
+		<parameter name="password" value="secretpassword"></parameter>
+		<parameter name="expectedAlertMsg" value="This user already exist."></parameter>
+
+		<classes>
+			<class name="com.demoblaze.RegistrationTests">
+
+				<methods>
+					<include name="registerUserTests"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+	<test name="registerWithIncompleteData">
+
+		<classes>
+			<class name="com.demoblaze.RegistrationTests">
+
+				<methods>
+					<include name="incompleteRegistrationTest"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>

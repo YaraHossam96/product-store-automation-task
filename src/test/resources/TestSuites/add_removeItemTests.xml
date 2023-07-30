@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="add_removeItemTests" verbose="1">
+	<test name="addRandomItemToCart">
+		<classes>
+			<class name="com.demoblaze.AddRemoveCartItemsTests">
+
+				<methods>
+					<include name="addRandomItemToCart"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+	
+	
+	<test name="removeItemFromCart">
+		<classes>
+			<class name="com.demoblaze.AddRemoveCartItemsTests">
+
+				<methods>
+					<include name="removeItemFromCart"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [checkoutTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="checkoutRndItemWithFullData(failed)">
+    <parameter name="country" value="UK"/>
+    <parameter name="month" value="July"/>
+    <parameter name="city" value="Leyland"/>
+    <parameter name="year" value="2023"/>
+    <parameter name="name" value="Carl John"/>
+    <parameter name="creditcard" value="12345678910"/>
+    <classes>
+      <class name="com.demoblaze.CheckoutTests">
+        <methods>
+          <include name="checkoutRandomItem" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.CheckoutTests -->
+    </classes>
+  </test> <!-- checkoutRndItemWithFullData(failed) -->
+  <test thread-count="5" name="checkoutRndItemWithMissingData(failed)">
+    <classes>
+      <class name="com.demoblaze.CheckoutTests">
+        <methods>
+          <include name="checkoutWithMissingData"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.CheckoutTests -->
+    </classes>
+  </test> <!-- checkoutRndItemWithMissingData(failed) -->
+</suite> <!-- Failed suite [checkoutTests] -->

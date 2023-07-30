@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="categoriesTests" verbose="1">
+	<test name="checkEachCategoryHasItemList">
+		<classes>
+			<class name="com.demoblaze.CategoriesListTests">
+
+				<methods>
+					<include name="checkCategoriesHasProductItems"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>
